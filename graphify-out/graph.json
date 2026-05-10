@@ -1,0 +1,936 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "arw_converter_pipeline",
+        "label": "ARW Conversion Pipeline",
+        "nodes": [
+          "component_dropzone",
+          "app_page",
+          "api_convert",
+          "concept_adobe_dng_converter",
+          "concept_dcraw"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/app/page.tsx"
+      },
+      {
+        "id": "tool_detection_flow",
+        "label": "Tool Detection Flow",
+        "nodes": [
+          "component_toolstatus",
+          "api_check_tools",
+          "concept_adobe_dng_converter",
+          "concept_dcraw"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/components/ToolStatus.tsx"
+      },
+      {
+        "id": "file_queue_system",
+        "label": "File Queue Management System",
+        "nodes": [
+          "app_page",
+          "component_filequeue",
+          "component_dropzone",
+          "concept_queue_item"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "src/app/page.tsx"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config_mjs",
+      "community": 7,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "id": "next_env_d_ts",
+      "community": 8,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "tailwind.config.ts",
+      "file_type": "code",
+      "source_file": "tailwind.config.ts",
+      "source_location": "L1",
+      "id": "tailwind_config_ts",
+      "community": 9,
+      "norm_label": "tailwind.config.ts"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "id": "next_config_ts",
+      "community": 10,
+      "norm_label": "next.config.ts"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "id": "src_app_layout_tsx",
+      "community": 5,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L12",
+      "id": "app_layout_rootlayout",
+      "community": 5,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L1",
+      "id": "src_app_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "nextId()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "id": "app_page_nextid",
+      "community": 0,
+      "norm_label": "nextid()"
+    },
+    {
+      "label": "convertAll()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L24",
+      "id": "app_page_convertall",
+      "community": 0,
+      "norm_label": "convertall()"
+    },
+    {
+      "label": "downloadAllAsZip()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L81",
+      "id": "app_page_downloadallaszip",
+      "community": 0,
+      "norm_label": "downloadallaszip()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L1",
+      "id": "src_app_api_check_tools_route_ts",
+      "community": 3,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "commandExists()",
+      "file_type": "code",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L7",
+      "id": "check_tools_route_commandexists",
+      "community": 3,
+      "norm_label": "commandexists()"
+    },
+    {
+      "label": "dngConverterExists()",
+      "file_type": "code",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L16",
+      "id": "check_tools_route_dngconverterexists",
+      "community": 3,
+      "norm_label": "dngconverterexists()"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L25",
+      "id": "check_tools_route_get",
+      "community": 3,
+      "norm_label": "get()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L1",
+      "id": "src_app_api_convert_route_ts",
+      "community": 4,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "getAvailableTool()",
+      "file_type": "code",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L13",
+      "id": "convert_route_getavailabletool",
+      "community": 4,
+      "norm_label": "getavailabletool()"
+    },
+    {
+      "label": "convertFile()",
+      "file_type": "code",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L23",
+      "id": "convert_route_convertfile",
+      "community": 4,
+      "norm_label": "convertfile()"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L49",
+      "id": "convert_route_post",
+      "community": 4,
+      "norm_label": "post()"
+    },
+    {
+      "label": "DropZone.tsx",
+      "file_type": "code",
+      "source_file": "src/components/DropZone.tsx",
+      "source_location": "L1",
+      "id": "src_components_dropzone_tsx",
+      "community": 0,
+      "norm_label": "dropzone.tsx"
+    },
+    {
+      "label": "DropZone()",
+      "file_type": "code",
+      "source_file": "src/components/DropZone.tsx",
+      "source_location": "L10",
+      "id": "components_dropzone_dropzone",
+      "community": 0,
+      "norm_label": "dropzone()"
+    },
+    {
+      "label": "FileQueue.tsx",
+      "file_type": "code",
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": "L1",
+      "id": "src_components_filequeue_tsx",
+      "community": 0,
+      "norm_label": "filequeue.tsx"
+    },
+    {
+      "label": "formatSize()",
+      "file_type": "code",
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": "L25",
+      "id": "components_filequeue_formatsize",
+      "community": 0,
+      "norm_label": "formatsize()"
+    },
+    {
+      "label": "ToolStatus.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ToolStatus.tsx",
+      "source_location": "L1",
+      "id": "src_components_toolstatus_tsx",
+      "community": 0,
+      "norm_label": "toolstatus.tsx"
+    },
+    {
+      "label": "PostCSS Config",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "postcss_config",
+      "community": 6,
+      "norm_label": "postcss config"
+    },
+    {
+      "label": "Tailwind CSS Config",
+      "file_type": "code",
+      "source_file": "tailwind.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tailwind_config",
+      "community": 6,
+      "norm_label": "tailwind css config"
+    },
+    {
+      "label": "Next.js Config",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "next_config",
+      "community": 1,
+      "norm_label": "next.js config"
+    },
+    {
+      "label": "Root Layout",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_layout",
+      "community": 2,
+      "norm_label": "root layout"
+    },
+    {
+      "label": "Home Page",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_page",
+      "community": 2,
+      "norm_label": "home page"
+    },
+    {
+      "label": "API Route: check-tools",
+      "file_type": "code",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "api_check_tools",
+      "community": 1,
+      "norm_label": "api route: check-tools"
+    },
+    {
+      "label": "API Route: convert",
+      "file_type": "code",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "api_convert",
+      "community": 1,
+      "norm_label": "api route: convert"
+    },
+    {
+      "label": "DropZone Component",
+      "file_type": "code",
+      "source_file": "src/components/DropZone.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "component_dropzone",
+      "community": 2,
+      "norm_label": "dropzone component"
+    },
+    {
+      "label": "FileQueue Component",
+      "file_type": "code",
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "component_filequeue",
+      "community": 2,
+      "norm_label": "filequeue component"
+    },
+    {
+      "label": "ToolStatus Component",
+      "file_type": "code",
+      "source_file": "src/components/ToolStatus.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "component_toolstatus",
+      "community": 2,
+      "norm_label": "toolstatus component"
+    },
+    {
+      "label": "README Documentation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_doc",
+      "community": 1,
+      "norm_label": "readme documentation"
+    },
+    {
+      "label": "ARW to DNG/TIFF Conversion",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_arw_conversion",
+      "community": 1,
+      "norm_label": "arw to dng/tiff conversion"
+    },
+    {
+      "label": "Adobe DNG Converter Tool",
+      "file_type": "rationale",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_adobe_dng_converter",
+      "community": 1,
+      "norm_label": "adobe dng converter tool"
+    },
+    {
+      "label": "dcraw Tool",
+      "file_type": "rationale",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_dcraw",
+      "community": 1,
+      "norm_label": "dcraw tool"
+    },
+    {
+      "label": "QueueItem Data Structure",
+      "file_type": "rationale",
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_queue_item",
+      "community": 2,
+      "norm_label": "queueitem data structure"
+    },
+    {
+      "label": "Next.js Server Actions 100mb Limit",
+      "file_type": "rationale",
+      "source_file": "next.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_server_actions",
+      "community": 1,
+      "norm_label": "next.js server actions 100mb limit"
+    },
+    {
+      "label": "archiver npm Package for ZIP",
+      "file_type": "rationale",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_archiver",
+      "community": 1,
+      "norm_label": "archiver npm package for zip"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_dropzone_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_filequeue_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_toolstatus_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_nextid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_convertall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_downloadallaszip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_api_check_tools_route_ts",
+      "target": "check_tools_route_commandexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_app_api_check_tools_route_ts",
+      "target": "check_tools_route_dngconverterexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_app_api_check_tools_route_ts",
+      "target": "check_tools_route_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "check_tools_route_get",
+      "target": "check_tools_route_commandexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "check_tools_route_get",
+      "target": "check_tools_route_dngconverterexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_app_api_convert_route_ts",
+      "target": "convert_route_getavailabletool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_app_api_convert_route_ts",
+      "target": "convert_route_convertfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_app_api_convert_route_ts",
+      "target": "convert_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "convert_route_post",
+      "target": "convert_route_getavailabletool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "convert_route_post",
+      "target": "convert_route_convertfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DropZone.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_components_dropzone_tsx",
+      "target": "components_dropzone_dropzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_components_filequeue_tsx",
+      "target": "components_filequeue_formatsize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "postcss.config.mjs",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "postcss_config",
+      "target": "tailwind_config"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "next.config.ts",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "next_config",
+      "target": "concept_server_actions"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/app/layout.tsx",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "app_layout",
+      "target": "app_page"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/DropZone.tsx",
+      "source_location": "line 29",
+      "weight": 1.0,
+      "source": "component_dropzone",
+      "target": "app_page"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "line 164",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "component_filequeue"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "line 155",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "component_toolstatus"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "line 40",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "api_convert"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "concept_queue_item"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ToolStatus.tsx",
+      "source_location": "line 16",
+      "weight": 1.0,
+      "source": "component_toolstatus",
+      "target": "api_check_tools"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "api_check_tools",
+      "target": "concept_adobe_dng_converter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": "line 14",
+      "weight": 1.0,
+      "source": "api_check_tools",
+      "target": "concept_dcraw"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/app/api/check-tools/route.ts",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "api_check_tools",
+      "target": "api_convert"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "line 11",
+      "weight": 1.0,
+      "source": "api_convert",
+      "target": "concept_adobe_dng_converter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "line 39",
+      "weight": 1.0,
+      "source": "api_convert",
+      "target": "concept_dcraw"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/convert/route.ts",
+      "source_location": "line 8",
+      "weight": 1.0,
+      "source": "api_convert",
+      "target": "concept_archiver"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "next.config.ts",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "concept_server_actions",
+      "target": "api_convert"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "concept_arw_conversion",
+      "target": "api_convert"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/FileQueue.tsx",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "component_filequeue",
+      "target": "concept_queue_item"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_doc",
+      "target": "concept_arw_conversion"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_arw_conversion",
+      "target": "concept_adobe_dng_converter"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_arw_conversion",
+      "target": "concept_dcraw"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "arw_converter_pipeline",
+      "label": "ARW Conversion Pipeline",
+      "nodes": [
+        "component_dropzone",
+        "app_page",
+        "api_convert",
+        "concept_adobe_dng_converter",
+        "concept_dcraw"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/app/page.tsx"
+    },
+    {
+      "id": "tool_detection_flow",
+      "label": "Tool Detection Flow",
+      "nodes": [
+        "component_toolstatus",
+        "api_check_tools",
+        "concept_adobe_dng_converter",
+        "concept_dcraw"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/components/ToolStatus.tsx"
+    },
+    {
+      "id": "file_queue_system",
+      "label": "File Queue Management System",
+      "nodes": [
+        "app_page",
+        "component_filequeue",
+        "component_dropzone",
+        "concept_queue_item"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "src/app/page.tsx"
+    }
+  ],
+  "built_at_commit": "629cf97698a9cec3d04a2a094f436ecc51e46c2c"
+}
